@@ -7,9 +7,11 @@
 </head>
 <body>
     <main>
+        <h1>Formulário de Cadastro</h1>
         <form>
-            <fieldset>
-                <legend>Contato</legend>
+            <section>
+             <fieldset>
+                <legend>Dados Pessoais</legend>
 
                 <label for="nome">Nome Completo:</label>
                 <input type="text" name="nome" id="nome">
@@ -21,7 +23,38 @@
                 <input type="date" name="data" id="data">
                 <label for="perfil">Foto de perfil:</label>
                 <input type="file" name="perfil" id="perfil">
+
             </fieldset>
+            </section>
+
+            <section>
+                <fieldset>
+                    <legend>Endereço</legend>
+
+                    <label for="cidade">Cidade</label>
+                    <select name="cidade" id="cidade">
+                        <optgroup label="Escolha sua cidade">
+                            <option value="Sapiranga">Sapiranga</option>
+                            <option value="trescoroas">Três Coroas</option>
+                            <option value="chapeco">Chapecó</option>
+                            <option value="florianopolis">Florianópolis</option>
+                            <option value="joinville">Joinville</option>
+                            <option value="blumenau">Blumenau</option>
+                        </optgroup>
+                    </select>
+
+                        <label for="estado">Estado</label>
+                        <select name="estado" id="estado">
+                         <optgroup label="Escolha seu Estado">
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="PR">Paraná</option>
+                        </optgroup>
+                        </select>
+                    </select>
+                </fieldset>
+            </section>
+           
         </form>
     </main>
 </body>

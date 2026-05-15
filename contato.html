@@ -1,61 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <main>
-        <h1>Formulário de Cadastro</h1>
-        <form>
-            <section>
-             <fieldset>
-                <legend>Dados Pessoais</legend>
+    <header>
 
-                <label for="nome">Nome Completo:</label>
-                <input type="text" name="nome" id="nome">
-                <label for="email">Email:</label>
-                <input type="email" name="email" id="email">
-                <label for="senha">Senha:</label>
-                <input type="password" name="senha" id="senha">
-                <label for="data">Data de nascimento:</label>
-                <input type="date" name="data" id="data">
-                <label for="perfil">Foto de perfil:</label>
-                <input type="file" name="perfil" id="perfil">
+        <div class="cabecalho">
 
-            </fieldset>
-            </section>
+            <div class="logo">
 
-            <section>
-                <fieldset>
-                    <legend>Endereço</legend>
+                <h1>TechSolutions</h1>
 
-                    <label for="cidade">Cidade</label>
-                    <select name="cidade" id="cidade">
-                        <optgroup label="Escolha sua cidade">
-                            <option value="Sapiranga">Sapiranga</option>
-                            <option value="trescoroas">Três Coroas</option>
-                            <option value="chapeco">Chapecó</option>
-                            <option value="florianopolis">Florianópolis</option>
-                            <option value="joinville">Joinville</option>
-                            <option value="blumenau">Blumenau</option>
-                        </optgroup>
-                    </select>
+            </div>
 
-                        <label for="estado">Estado</label>
-                        <select name="estado" id="estado">
-                         <optgroup label="Escolha seu Estado">
-                            <option value="RS">Rio Grande do Sul</option>
-                            <option value="SC">Santa Catarina</option>
-                            <option value="PR">Paraná</option>
-                        </optgroup>
-                        </select>
-                    </select>
-                </fieldset>
-            </section>
-           
-        </form>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="contato.html">Contato</a>
+            </nav>
+
+        </div>
+
+    </header>
+
+    <main class="formulario">
+
+        <div class="formulario-conteudo">
+
+            <div class="formulario-titulo">
+                <h1>Formulário de Cadastro</h1>
+            </div>
+
+            <form>
+
+                <section>
+
+                    <fieldset>
+
+                        <legend>Dados Pessoais</legend>
+
+                        <div class="campo">
+                            <label for="nome">Nome Completo</label>
+                            <input type="text" name="nome" id="nome">
+                        </div>
+
+                        <div class="campo">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email">
+                        </div>
+
+                        <div class="campo">
+                            <label for="senha">Senha</label>
+                            <input type="password" name="senha" id="senha">
+                        </div>
+
+                        <div class="campo">
+                            <label for="data">Data de nascimento</label>
+                            <input type="date" name="data" id="data">
+                        </div>
+
+                        <div class="campo">
+                            <label for="perfil">Foto de perfil</label>
+                            <input type="file" name="perfil" id="perfil">
+                        </div>
+
+                    </fieldset>
+
+                </section>
+
+                <section>
+
+                    <fieldset>
+
+                        <legend>Endereço</legend>
+
+                        <div class="campo">
+                            <label for="cidade">Cidade</label>
+
+                            <select name="cidade" id="cidade">
+                                <option value="Sapiranga">Sapiranga</option>
+                                <option value="trescoroas">Três Coroas</option>
+                                <option value="chapeco">Chapecó</option>
+                                <option value="florianopolis">Florianópolis</option>
+                                <option value="joinville">Joinville</option>
+                                <option value="blumenau">Blumenau</option>
+                            </select>
+                        </div>
+
+                        <div class="campo">
+                            <label for="estado">Estado</label>
+
+                            <select name="estado" id="estado">
+                                <option value="RS">Rio Grande do Sul</option>
+                                <option value="SC">Santa Catarina</option>
+                                <option value="PR">Paraná</option>
+                            </select>
+                        </div>
+
+                    </fieldset>
+
+                </section>
+
+                <button type="submit" class="botao-formulario">
+                    Enviar Cadastro
+                </button>
+
+            </form>
+
+        </div>
+
     </main>
+
+    <footer>
+        <p>© 2026 TechSolutions - Todos os direitos reservados.</p>
+    </footer>
 </body>
+
 </html>

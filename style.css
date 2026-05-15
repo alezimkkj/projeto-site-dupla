@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #0a0a0a;
+}
+
+header {
+    background-color: #000;
+    color: white;
+    border-bottom: 1px solid #1f1f1f;
+}
+
+.cabecalho {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo svg {
+    height: 30px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: #cfcfcf;
+}
+
+.banner {
+    background-color: black;
+    color: white;
+    padding: 120px 20px;
+}
+
+.banner-conteudo {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.banner-texto {
+    display: inline-block;
+    background-color: #171717;
+    border: 1px solid #2b2b2b;
+    padding: 8px 16px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+
+.banner-titulo {
+    font-size: 58px;
+    max-width: 700px;
+    margin-bottom: 20px;
+}
+
+.banner-descricao {
+    font-size: 18px;
+    color: #cfcfcf;
+    max-width: 600px;
+    margin-bottom: 35px;
+}
+
+.banner-botao {
+    display: inline-block;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    padding: 14px 28px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.banner-botao:hover {
+    background-color: #dcdcdc;
+}
+
+.sobre {
+    background-color: white;
+    color: black;
+    padding: 100px 20px;
+}
+
+.sobre-topo {
+    max-width: 800px;
+    margin: 0 auto 60px auto;
+    text-align: center;
+}
+
+.sobre-texto {
+    display: inline-block;
+    background-color: #f1f1f1;
+    border: 1px solid #dcdcdc;
+    padding: 8px 16px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.sobre-topo h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.sobre-topo p {
+    color: #555;
+    font-size: 18px;
+}
+
+.sobre-cards {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+
+    gap: 25px;
+}
+
+.card {
+    background-color: #f8f8f8;
+    border: 1px solid #dddddd;
+    border-radius: 18px;
+    padding: 30px;
+}
+
+.card h3 {
+    font-size: 26px;
+    margin-bottom: 18px;
+}
+
+.card p,
+.card li {
+    color: #555;
+}
+
+.card ul {
+    padding-left: 20px;
+}
+
+.card li {
+    margin-bottom: 10px;
+}
+
+.clientes {
+    background-color: #0d0d0d;
+    color: white;
+    padding: 100px 20px;
+}
+
+.clientes-topo {
+    max-width: 700px;
+    margin: 0 auto 60px auto;
+    text-align: center;
+}
+
+.clientes-texto {
+    display: inline-block;
+    background-color: #1b1b1b;
+    border: 1px solid #2d2d2d;
+    padding: 8px 16px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.clientes-topo h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.clientes-topo p {
+    color: #cfcfcf;
+    font-size: 18px;
+}
+
+.clientes-cards {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+    gap: 25px;
+}
+
+.cliente {
+    background-color: #171717;
+    border: 1px solid #2a2a2a;
+    border-radius: 18px;
+    padding: 30px;
+}
+
+.foto img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.comentario h3 {
+    margin-bottom: 12px;
+}
+
+.comentario p {
+    color: #cfcfcf;
+}
+
+.info-clientes {
+    max-width: 800px;
+    margin: 50px auto 0 auto;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 15px;
+
+    list-style: none;
+}
+
+.info-clientes li {
+    background-color: #171717;
+    border: 1px solid #2b2b2b;
+    padding: 14px 20px;
+    border-radius: 10px;
+}
+
+.contato {
+    background-color: white;
+    color: black;
+    padding: 120px 20px;
+    text-align: center;
+}
+
+.contato-conteudo {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.contato-texto {
+    display: inline-block;
+    background-color: #f1f1f1;
+    border: 1px solid #dcdcdc;
+    padding: 8px 16px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.contato h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.contato p {
+    color: #555;
+    font-size: 18px;
+}
+
+.contato-botao {
+    display: inline-block;
+    margin-top: 35px;
+
+    background-color: black;
+    color: white;
+
+    text-decoration: none;
+
+    padding: 14px 28px;
+    border-radius: 10px;
+}
+
+.contato-botao:hover {
+    background-color: #222;
+}
+
+footer {
+    background-color: black;
+    color: #8a8a8a;
+    text-align: center;
+    padding: 30px 20px;
+}
